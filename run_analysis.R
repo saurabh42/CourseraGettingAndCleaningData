@@ -54,4 +54,4 @@ grouped_data <- group_by(data_sub, subject, activity)
 final_data <- summarize_all(grouped_data, mean)
 
 # setwd("/u1/saurmeht/R_assignment")
-write.table(final_data,"final_data.txt",sep=",",row.names=TRUE)
+write.table(final_data,"final_data.txt",sep=",",row.names=FALSE)
